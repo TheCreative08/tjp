@@ -17,9 +17,16 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
         />
         <div className="absolute top-0 w-full h-full bg-black bg-opacity-40 z-10 flex flex-col items-center justify-center animate-pulse">
           <h1 className="text-3xl md:text-5xl font-bold text-white">
-            T-JP
+          <Image
+          src="/logo.svg"
+          width={1000}
+          height={1000}
+          alt="Doctors"
+          className="w-full h-full object-cover"
+        />
           </h1>
-          <p className="text-blue-50 text-base">You're welcome</p>
+      
+          <p className="text-blue-50 text-base">You are welcome</p>
         </div>
       </div>
     </div>
