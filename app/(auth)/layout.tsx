@@ -9,7 +9,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
       </div>
       <div className="hidden md:flex w-1/2 h-full relative">
         <Image
-          src=""
+          src="/bg-img.jpg"
           width={1000}
           height={1000}
           alt="Doctors"

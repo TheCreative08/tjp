@@ -3,7 +3,6 @@ import { getRole } from "@/utils/roles";
 import { auth } from "@clerk/nextjs/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-
 export default async function Home() {
   const { userId } = await auth();
   const role = await getRole();
@@ -13,7 +12,7 @@ export default async function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen p-6 bg-gradient-to-tl from-blue-200 via-blue-500 to-blue-800">
+    <div className="flex flex-col items-center justify-center h-screen p-6  background">
       <div className="flex-1 flex flex-col items-center justify-center">
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-center">
